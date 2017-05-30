@@ -1,0 +1,47 @@
+<div class="container">  
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+          <h2>上传歌曲</h2>
+            <form class="form-signin" id="formMusic" action="login.php" method="post">
+              <div class="form-group">
+                <label for="musicName">歌曲名</label>
+                <input type="text" class="form-control" name="musicName" id="musicName" placeholder="歌曲名称" required>
+              </div>
+              <div class="form-group">
+                <label for="musicArtistName">艺术家</label>
+                <input type="text" class="form-control" name="musicArtistName" id="musicArtistName" placeholder="艺术家" required>
+              </div>
+              <div class="form-group">
+                <label for="musicAlbum">专辑名</label>
+                <input type="text" class="form-control" name="musicAlbum" id="musicAlbum" placeholder="专辑名" required>
+              </div>
+              <div class="form-group">
+                <label for="musicDuration">音乐时长</label>
+                <input type="time" class="form-control" name="musicDuration" id="musicDuration" placeholder="音乐时长" required>
+              </div>
+                <div class="form-group">
+                <label for="musicQuality">歌曲质量</label>
+                <select class="form-control" form="formMusic" name="musicQuality" >
+                <option>普通(128kbit/s)</option>
+                <option>较高(192kbit/s)</option>
+                <option>极高(320kbit/s)</option>
+                <option>无损</option>
+              </select>
+              </div>
+              <div class="form-group">
+                <label for="musicFile">歌曲文件</label>
+                <input type="file" name="musicFile" id="musicFile" required>
+             <!--   <p class="help-block">请上传歌词文件.</p>-->
+              </div>
+              <div class="form-group">
+                <label for="musicCoverFile">封面图片</label>
+                <input type="file" name="musicCoverFile" id="musicCoverFile" required>
+              </div>
+              <div class="form-group">
+                <label for="musicLyricFile">歌词文件</label>
+                <input type="file" name="musicLyricFile" id="musicLyricFile" required>
+              </div>
+              <button type="submit" class="btn  btn-primary btn-lg">上传歌曲</button>
+             </form>
+           </div>
+        </div> <!-- /container -->
