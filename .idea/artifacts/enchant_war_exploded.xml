@@ -9,6 +9,8 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="application" name="Struts-2.5.10.1" />
+          <element id="file-copy" path="C:/Program Files/Java/jdk1.8.0_65/lib/jedis-2.9.0.jar" />
+          <element id="library" level="application" name="javax.mail" />
         </element>
       </element>
     </root>

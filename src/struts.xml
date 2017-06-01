@@ -5,4 +5,146 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
+    <package name="root" namespace="/" extends="json-default">
+        <action name="register" class="actions.Register" method="register">
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result name="RegisterResult" type="json">
+                <param name="excludeProperties">
+                    user,code
+                </param>
+            </result>
+        </action>
+
+        <action name="myjson" class="actions.MyJSON" method="json">
+            <interceptor-ref name="json">
+            </interceptor-ref>
+            <result type="json">
+                <!-- 这里指定将被Struts2序列化的属性，该属性在action中必须有对应的getter方法 -->
+            </result>
+        </action>
+
+        <action name="getCode" class="actions.GetCode" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+            </interceptor-ref>
+            <result type="json">
+                <param name="excludeProperties">
+                    email
+                </param>
+            </result>
+        </action>
+
+        <action name="login" class="actions.Login" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result name="AndroidUser" type="json">
+                <param name="excludeProperties">
+                    email,password
+                </param>
+            </result>
+            <result name="WebAdmin" type="redirect">
+                /enchantAdmin/index.html
+            </result>
+        </action>
+
+        <action name="getBroadcastMessages" class="actions.getBroadcastMessages" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json">
+                <param name="includeProperties">
+                    broadcast_messages,STATUS
+                </param>
+            </result>
+        </action>
+
+        <action name="releaseNotice" class="actions.ReleaseNotice" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json" name="error">
+                <param name="excludeProperties">
+                    noticeTitle,noticeContent
+                </param>
+            </result>
+        </action>
+        <action name="uploadMusic" class="actions.UploadMusic" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json" name="error">
+                <param name="includeProperties">
+                    STATUS
+                </param>
+            </result>
+        </action>
+    </package>
+
+    <package name="admin" namespace="/enchantAdmin" extends="json-default">
+        <action name="login" class="actions.Login" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result name="AndroidUser" type="json">
+                <param name="excludeProperties">
+                    email,password
+                </param>
+            </result>
+            <result name="WebAdmin" type="redirect">
+                /enchantAdmin/index.html
+            </result>
+
+            <result name="WebError">
+                /enchantAdmin/login.html
+            </result>
+        </action>
+
+        <action name="releaseNotice" class="actions.ReleaseNotice" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json" name="error">
+                <param name="excludeProperties">
+                    noticeTitle,noticeContent
+                </param>
+            </result>
+        </action>
+        <action name="uploadMusic" class="actions.UploadMusic" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json" name="error">
+                <param name="includeProperties">
+                    STATUS
+                </param>
+            </result>
+        </action>
+
+    </package>
 </struts>
