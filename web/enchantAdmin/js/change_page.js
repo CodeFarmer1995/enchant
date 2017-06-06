@@ -43,13 +43,7 @@ function changePage(objActive,pageIndex) {
                 $("#page-content").load("page/music_upload.html");
                 break;
               case 6:
-                $("#page-content").load("page/notice.html");
-                break;
-              case 7:
-                $("#page-content").load("page/notice.html");
-                break;
-              case 8:
-                $("#page-content").load("page/notice.html");
+                $("#page-content").load("page/user_list.html");
                 break;
               default:
                 break;
@@ -86,20 +80,10 @@ function switchPage(strHash) {
             arrPage['page_num'] = 5;
             arrPage['li_id'] = "page-music-upload";
             break;
-        case "user-info":
-            arrPage['page_file'] = strRootPath + "user_info.html";
+        case "user-list":
+            arrPage['page_file'] = strRootPath + "user_list.html";
             arrPage['page_num'] = 6;
-            arrPage['li_id'] = "page-user-info";
-            break;
-        case "user-manage":
-            arrPage['page_file'] = strRootPath + "user_manage.html";
-            arrPage['page_num'] = 7;
-            arrPage['li_id'] = "page-user-manage";
-            break;
-        case "user-push":
-            arrPage['page_file'] = strRootPath + "user_push.html";
-            arrPage['page_num'] = 8;
-            arrPage['li_id'] = "page-user-push";
+            arrPage['li_id'] = "page-user-list";
             break;
         default:
             arrPage['page_file'] = strRootPath + "home.html";
