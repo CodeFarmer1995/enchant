@@ -19,9 +19,19 @@
 
         <action name="myjson" class="actions.MyJSON" method="json">
             <interceptor-ref name="json">
+                <param name="includeProperties">
+                    messages\[\d+\]\.content,
+                    messages\[\d+\]\.create_time,
+                    messages\[\d+\]\.title
+                </param>
             </interceptor-ref>
             <result type="json">
                 <!-- 这里指定将被Struts2序列化的属性，该属性在action中必须有对应的getter方法 -->
+                <param name="includeProperties">
+                    messages\[\d+\]\.content,
+                    messages\[\d+\]\.create_time,
+                    messages\[\d+\]\.title
+                </param>
             </result>
         </action>
 
@@ -47,7 +57,7 @@
             </interceptor-ref>
             <result name="AndroidUser" type="json">
                 <param name="excludeProperties">
-                    email,password
+                   password
                 </param>
             </result>
             <result name="WebAdmin" type="redirect">
@@ -55,7 +65,7 @@
             </result>
         </action>
 
-        <action name="getBroadcastMessages" class="actions.getBroadcastMessages" method="execute">
+        <action name="getBroadcastMessages" class="actions.GetBroadcastMessages" method="execute">
             <interceptor-ref name="defaultStack">
 
             </interceptor-ref>
@@ -63,8 +73,12 @@
 
             </interceptor-ref>
             <result type="json">
+
                 <param name="includeProperties">
-                    broadcast_messages,STATUS
+                    broadcast_messages\[\d+\]\.content,
+                    broadcast_messages\[\d+\]\.create_time,
+                    broadcast_messages\[\d+\]\.title,
+                    STATUS
                 </param>
             </result>
         </action>
@@ -95,6 +109,61 @@
                 </param>
             </result>
         </action>
+
+        <action name="getMusicList" class="actions.GetMusicList" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json" name="success">
+                music\[\d+\]\.music_id,
+                music\[\d+\]\.music_name,
+                music\[\d+\]\.user_id,
+                music\[\d+\]\.artist_name,
+                music\[\d+\]\.album,
+                music\[\d+\]\.cover_file,
+                music\[\d+\]\.quality,
+                music\[\d+\]\.duration,
+                music\[\d+\]\.music_file,
+                music\[\d+\]\.lyric_file,
+                music\[\d+\]\.music_type,
+                music\[\d+\]\.ext_info,
+                music\[\d+\]\.update_time,
+                music\[\d+\]\.create_time,
+            </result>
+        </action>
+        <action name="getLatestMessages" class="actions.GetLatestMessage" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result name="success" type="json">
+                    <param name="includeProperties">
+
+                        lm\[\d+\]\.remoteID,
+                        lm\[\d+\]\.remoteName,
+                        lm\[\d+\]\.lastMessage,
+                        lm\[\d+\]\.lastTime,
+                    </param>
+            </result>
+        </action>
+        <action name="editAvatar" class="actions.EditAvatar" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json" name="success">
+                <param name="includeProperties">
+                    STATUS
+                </param>
+            </result>
+        </action>
     </package>
 
     <package name="admin" namespace="/enchantAdmin" extends="json-default">
@@ -107,7 +176,7 @@
             </interceptor-ref>
             <result name="AndroidUser" type="json">
                 <param name="excludeProperties">
-                    email,password
+                    password
                 </param>
             </result>
             <result name="WebAdmin" type="redirect">

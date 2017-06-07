@@ -4,6 +4,8 @@ package beans;
  * Created by Jack on 2017-05-31.
  */
 public class message {
+
+
     private String title;
     private String content;
     private String create_time;
