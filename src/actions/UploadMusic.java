@@ -130,7 +130,7 @@ public class UploadMusic extends ActionSupport implements status {
             STATUS=NO_PRIVILEGES;
 
             if(uagent.matches(".*AppleWebKit.*") || uagent.matches(".*Mozilla.*") || uagent.matches(".*Chrome.*") ){
-                ServletActionContext.getResponse().getWriter().print("<script>alert('NO_PRIVILEGES!');window.location.href='/enchant/enchantAdmin/index.html';</script>");
+                ServletActionContext.getResponse().getWriter().print("<script>alert('NO_PRIVILEGES!');window.location.href='/enchant/enchantAdmin/index.jsp';</script>");
                 return null;
             }
             return ERROR;
@@ -189,7 +189,7 @@ public class UploadMusic extends ActionSupport implements status {
 
         System.out.println(uagent);
         if(uagent.matches(".*AppleWebKit.*") || uagent.matches(".*Mozilla.*") || uagent.matches(".*Chrome.*") ){
-            ServletActionContext.getResponse().getWriter().print("<script>alert('Upload Success!');window.location.href='/enchant/enchantAdmin/index.html';</script>");
+            ServletActionContext.getResponse().getWriter().print("<script>alert('Upload Success!');window.location.href='/enchant/enchantAdmin/index.jsp';</script>");
             return null;
         }
         return SUCCESS;

@@ -33,6 +33,7 @@ public class GetLatestMessage extends ActionSupport implements status {
 
     @Override
     public String execute() throws Exception {
+        System.out.println("android"+localID);
         messages=new ArrayList<LatestMessage>();
         ServletContext sctx= ServletActionContext.getServletContext();
         Connection con = (Connection) sctx.getAttribute("DBCon");

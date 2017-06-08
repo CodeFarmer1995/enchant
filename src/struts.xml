@@ -61,7 +61,7 @@
                 </param>
             </result>
             <result name="WebAdmin" type="redirect">
-                /enchantAdmin/index.html
+                /enchantAdmin/index.jsp?name=${name}
             </result>
         </action>
 
@@ -118,6 +118,7 @@
 
             </interceptor-ref>
             <result type="json" name="success">
+                <param name="includeProperties">
                 music\[\d+\]\.music_id,
                 music\[\d+\]\.music_name,
                 music\[\d+\]\.user_id,
@@ -131,7 +132,8 @@
                 music\[\d+\]\.music_type,
                 music\[\d+\]\.ext_info,
                 music\[\d+\]\.update_time,
-                music\[\d+\]\.create_time,
+                music\[\d+\]\.create_time
+                </param>
             </result>
         </action>
         <action name="getLatestMessages" class="actions.GetLatestMessage" method="execute">
@@ -147,7 +149,7 @@
                         lm\[\d+\]\.remoteID,
                         lm\[\d+\]\.remoteName,
                         lm\[\d+\]\.lastMessage,
-                        lm\[\d+\]\.lastTime,
+                        lm\[\d+\]\.lastTime
                     </param>
             </result>
         </action>
@@ -161,6 +163,81 @@
             <result type="json" name="success">
                 <param name="includeProperties">
                     STATUS
+                </param>
+            </result>
+        </action>
+        <action name="getUserList" class="actions.GetUserList" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result  name="success" type="json">
+                <param name="excludeProperties">
+                    sc,sn,userList
+                </param>
+
+                <param name="includeProperties">
+                users\[\d+\]\.id,
+                users\[\d+\]\.name,
+                users\[\d+\]\.sex,
+                users\[\d+\]\.avatar,
+                users\[\d+\]\.type,
+                users\[\d+\]\.email
+                </param>
+
+            </result>
+        </action>
+        <action name="getFeedback" class="actions.GetFeedBack" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result name="success" type="json">
+                <param name="excludeProperties">
+                    sc,sn
+                </param>
+            </result>
+        </action>
+        <action name="searchMusic" class="actions.SearchMusic" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json" name="success">
+                <param name="excludeProperties">
+                    sc,sn
+                </param>
+            </result>
+        </action>
+        <action name="sendMessage" class="actions.SendMessage" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result name="success" type="json">
+                <param name="includeProperties">
+                    STATUS
+                </param>
+            </result>
+        </action>
+        <action name="getMessages" class="actions.GetMessages" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result type="json" name="success">
+                <param name="excludeProperties">
+                    send_user_id,to_user_id
                 </param>
             </result>
         </action>
@@ -180,7 +257,7 @@
                 </param>
             </result>
             <result name="WebAdmin" type="redirect">
-                /enchantAdmin/index.html
+                /enchantAdmin/index.jsp
             </result>
 
             <result name="WebError">

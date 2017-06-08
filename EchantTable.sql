@@ -129,7 +129,7 @@ CREATE TABLE `messages`(
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `send_user_id` BIGINT(20) UNSIGNED NOT NULL,
   `to_user_id` BIGINT(20) UNSIGNED NOT NULL,
-  `message_type` TINYINT(4) NOT NULL,  --0广播1个人
+  `message_type` TINYINT(4) NOT NULL,  --0广播1反馈2聊天
   `content` VARCHAR(256) NOT NULL,
   `create_time` INT(11) UNSIGNED NOT NULL,
   `title` VARCHAR(128) NOT NULL ,

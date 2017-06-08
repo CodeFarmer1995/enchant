@@ -50,14 +50,22 @@ public class GetMusicList extends ActionSupport implements status {
     @Override
     public String execute() throws Exception {
         int limit=sc;
-        int offset=1;
+        int offset=(sn-1)*sc;
         System.out.println(sc+" "+sn);
         musicList=new ArrayList<Music>();
+
         ServletContext sctx= ServletActionContext.getServletContext();
         Connection con = (Connection) sctx.getAttribute("DBCon");
+        ResultSet rs,rs1;
+//        String querySql="SELECT count(music_id) FROM music_info";
+//        rs=con.createStatement().executeQuery(querySql);
+//        if(rs.next()){
+//            offset=rs.getInt(1)/limit;
+//        }
+
         String querySql = "select * from music_info limit " + limit
                 + " OFFSET  "+offset+" ";
-        ResultSet rs,rs1;
+        System.out.println(querySql);
         rs = con.createStatement().executeQuery(querySql);
         while (rs.next()){
 //            System.out.println(rs.getInt(1));
@@ -93,7 +101,7 @@ public class GetMusicList extends ActionSupport implements status {
         }
 
         music=(Music[])musicList.toArray(new Music[0]);
-
+        System.out.println(music.length);
         return SUCCESS;
     }
 }
