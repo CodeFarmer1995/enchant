@@ -60,7 +60,7 @@ function feedBackCallBack(pn,ps,data) {
     feedbackList.feedbacks = [];
     for( intIndex in arrData['feedback']){
         console.log(arrData['feedback'][intIndex]);
-        feedbackList.feedbacks.push({user_id:arrData['feedback'][intIndex]['user_id'],title:arrData['feedback'][intIndex]['title'],content:arrData['feedback'][intIndex]['content'],create_time:arrData['feedback'][intIndex]['create_time']});
+        feedbackList.feedbacks.push({id:arrData['feedback'][intIndex]['id'],title:arrData['feedback'][intIndex]['title'],content:arrData['feedback'][intIndex]['content'],create_time:arrData['feedback'][intIndex]['create_time']});
     }
     setPagination(pageList.$data.pages_sum,pn,pn);
 }

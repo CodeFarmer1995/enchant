@@ -10,7 +10,7 @@ import java.io.File;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-public class UploadMusic extends ActionSupport implements status {
+public class EditMusic extends ActionSupport implements status {
     private String musicName;
     private String musicArtistName;
     private String musicDuration;
@@ -21,7 +21,8 @@ public class UploadMusic extends ActionSupport implements status {
     private String musicCoverFileFileName;
     private File musicLyricFile;
     private String musicLyricFileFileName;
-
+    private String musicAlbum;
+    private int STATUS;
 
     public String getMusicFileFileName() {
         return musicFileFileName;
@@ -47,8 +48,7 @@ public class UploadMusic extends ActionSupport implements status {
         this.musicLyricFileFileName = musicLyricFileFileName;
     }
 
-    private String musicAlbum;
-    private int STATUS;
+
 
     public int getSTATUS() {
         return STATUS;
@@ -137,7 +137,7 @@ public class UploadMusic extends ActionSupport implements status {
         }
 
         Connection con = (Connection) sctx.getAttribute("DBCon");
-        String insertSql = "insert into  music_info(music_name,user_id,artist_name,album,cover_file,quality,duration,music_file,lyric_file,music_type,ext_info,create_time,update_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        String insertSql = "update  music_info (music_name,user_id,artist_name,album,cover_file,quality,duration,music_file,lyric_file,music_type,ext_info,create_time,update_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
         PreparedStatement pstat = con.prepareStatement(insertSql);
 
         pstat.setString(1,musicName);
