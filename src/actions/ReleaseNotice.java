@@ -69,7 +69,7 @@ public class ReleaseNotice extends ActionSupport implements status {
             con.createStatement().execute("INSERT INTO unreadboardcastmessages (to_user_id,message_id,`read`) VALUES ("+to_user_id+","+message_id+",0)");
         }
         if(uagent.matches(".*AppleWebKit.*") || uagent.matches(".*Mozilla.*") || uagent.matches(".*Chrome.*") ){
-            ServletActionContext.getResponse().getWriter().print("<script>alert('Upload Success!');window.location.href='/enchant/enchantAdmin/index.html';</script>");
+            ServletActionContext.getResponse().getWriter().print("<script>alert('Upload Success!');window.location.href='/enchant/enchantAdmin/index.jsp';</script>");
 
             return null;
         }

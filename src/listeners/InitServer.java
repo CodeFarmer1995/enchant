@@ -36,8 +36,8 @@ public class InitServer implements ServletContextListener {
         Connection conn;
         ServletContext sctx = arg0.getServletContext();
         try {
-            driver = "com.mysql.jdbc.Driver";
-            url = "jdbc:mysql://localhost:3306/EServer";
+            driver = "org.mariadb.jdbc.Driver";
+            url = "jdbc:mariadb://localhost:3306/EServer";
             user = "root";
             password = "root";
 

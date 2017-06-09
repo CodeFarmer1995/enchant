@@ -10,11 +10,21 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class getBroadcastMessages extends ActionSupport implements status{
+public class GetBroadcastMessages extends ActionSupport implements status{
         private int STATUS;
         private ArrayList<message> messages;
         private int id;
-        private message [] broadcast_messages;
+    private message [] broadcast_messages;
+
+    public message[] getBroadcast_messages() {
+        return broadcast_messages;
+    }
+
+    public void setBroadcast_messages(message[] broadcast_messages) {
+        this.broadcast_messages = broadcast_messages;
+    }
+
+
     public ArrayList<message> getMessages() {
         return messages;
     }
@@ -63,7 +73,9 @@ public class getBroadcastMessages extends ActionSupport implements status{
             System.out.println(((message)iterator.next()).getTitle());
         }
         //Integer[] newText = (Integer[])v.toArray(new Integer[0]);
-        message [] broadcast_messages= (message [] )messages.toArray();
+       broadcast_messages= (message [] )messages.toArray(new message[0]);
+        for (int i=0;i<broadcast_messages.length;i++)
+            System.out.println(broadcast_messages[i].getTitle()+" "+broadcast_messages[i].getTitle());
         STATUS=SUCCESSFUL;
         return SUCCESS;
     }

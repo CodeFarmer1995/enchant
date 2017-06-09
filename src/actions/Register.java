@@ -115,7 +115,7 @@ public class Register extends ActionSupport implements status {
             pstat.setString(7, "1");
             pstat.setLong(8, System.currentTimeMillis() / 1000);
             pstat.setLong(9, System.currentTimeMillis() / 1000);
-            pstat.setString(10, "");
+            pstat.setString(10, "-1");
             System.out.println(pstat);
             // pstat.setString(6, user.getUavatar());
             pstat.execute();

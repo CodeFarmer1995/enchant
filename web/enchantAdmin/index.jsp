@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=UTF-8" %>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
@@ -19,6 +20,19 @@
     <link rel="stylesheet" href="css/music_list.css" />
   </head>
   <body>
+  <%!
+      private String name;
+  %>
+  <%
+
+      Cookie cookies[]=cookies = request.getCookies();
+      for (int i=0;i<cookies.length;i++){
+          if(cookies[i].getName().equals("name")){
+              name=cookies[i].getValue();
+          }
+      }
+  %>
+
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -56,7 +70,12 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><u><span id="login_user">用户名称</span></u><span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+
+                  <u><span id="login_user">
+                      <%=name %></span>
+                  </u>
+                  <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li class=" page dropdown-li"><a href="#user-info">我的信息</a></li>
                 <li class=" page dropdown-li"><a href="#user-manage">注销</a></li>

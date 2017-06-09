@@ -1,9 +1,13 @@
 package actions;
 
 import beans.User;
+import beans.bean;
+import beans.message;
 import com.opensymphony.xwork2.ActionSupport;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class MyJSON extends ActionSupport {
     private String name;
@@ -14,6 +18,24 @@ public class MyJSON extends ActionSupport {
     }
     private String[] info;
     private User user;
+    private HashSet<message> messages;
+    private Set<bean> beans;
+
+    public Set<bean> getBeans() {
+        return beans;
+    }
+
+    public void setBeans(Set<bean> beans) {
+        this.beans = beans;
+    }
+
+    public HashSet<message> getMessages() {
+        return messages;
+    }
+
+    public void setMessages(HashSet<message> messages) {
+        this.messages = messages;
+    }
 
     public User getUser() {
         return user;
@@ -57,7 +79,13 @@ public class MyJSON extends ActionSupport {
 //        name="jack";
 //        age="22";
         System.out.println(age+" "+name);
-
+//        Iterator<bean> ib=beans.iterator();
+//        while ((ib.hasNext())){
+//            System.out.println(ib.next().getC());
+//        }
+        messages=new HashSet<message>();
+        messages.add(new message("1","2","3"));
+        messages.add(new message("2","2","3"));
         return SUCCESS;
     }
 }
