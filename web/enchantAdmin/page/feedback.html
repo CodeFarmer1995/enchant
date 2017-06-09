@@ -7,10 +7,10 @@
             <tr>
               <td>用户id</td>
               <td>标题</td>
-              <td>内容</td>
+              <td>内容</td>   ·
               <td>时间</td>
             </tr>
-            <tr  v-for="feedback in feedbackList" class="active">
+            <tr  v-for="feedback in feedbacks" class="active">
               <td>{{feedback.user_id}}</td>
               <td>{{feedback.title}}</td>
               <td>{{feedback.content}}</td>
@@ -18,19 +18,64 @@
             </tr>
         </table>
 </div>
+<div id="page_list">
+    <nav aria-label="Page navigation">
+  <ul class="pagination pagination-lg">
+    <li>
+      <a v-on:click="pagePrevious"  aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li v-for="page_number in pages" v-bind:class="{active : page_number.is_active}" v-on:click="changePage(page_number.page_index)"><a  v-bind:class="{hidden : page_number.is_hidden}">{{page_number.page_index}}</a></li>
+    <li>
+      <a v-on:click="pageNext" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
       </div>
 <script>
+    var strUrl = 'http://127.0.0.1/music.php';
     var feedbackList = new Vue({
        el: '#feedback_list',
        data: {
-       feedbackList: [
-         { user_id: '学习 JavaScript',title: '辣鸡',content: 'JavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScript',create_time:'qweqwe'},
-         { user_id: '学习 JavaScript',title: '辣鸡',content: 'mc',create_time:'qweqwe'},
-         { user_id: '学习 JavaScript',title: '辣鸡',content: 'mc',create_time:'qweqwe'},
-         { user_id: '学习 JavaScript',title: '辣鸡',content: 'mc',create_time:'qweqwe'},
-         { user_id: '学习 JavaScript',title: '辣鸡',content: 'mc',create_time:'qweqwe'},
-        ]
+          feedback_count : 0,
+          feedbacks: [
+              { user_id: '学习 JavaScript',title: '辣鸡',content: 'asdasdas',create_time:'qweqwe'},
+          ]
       }
-     })
+     });
+
+     var pageList = new Vue({
+       el: '#page_list',
+       data: {
+       pages_sum : 1,
+       current_page : 1,
+       focus_page : 1,
+       page_size : 3,
+       pages: [
+        ]
+       
+      },
+       methods: {
+          changePage: function(page_index){
+              this.$data.current_page = page_index;
+              this.$data.focus_page = page_index;
+              getPageList(this.$data.current_page,this.$data.page_size,feedBackCallBack,strUrl);
+          },
+          pagePrevious: function(){
+              this.$data.focus_page = this.$data.focus_page - 4;
+              setPagination(this.$data.pages_sum,this.$data.focus_page,this.$data.current_page);
+          },
+          pageNext: function(){
+              this.$data.focus_page = this.$data.focus_page + 4;            
+              setPagination(this.$data.pages_sum,this.$data.focus_page,this.$data.current_page);
+          }
+          
+       }
+    });
+    getPageList(1,pageList.$data.page_size,feedBackCallBack,strUrl);
 </script>
     </div> <!-- /container -->
