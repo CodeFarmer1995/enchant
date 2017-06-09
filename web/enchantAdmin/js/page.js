@@ -48,7 +48,8 @@ function musicListCallBack(pn,ps,data) {
     pageList.$data.pages_sum = Math.ceil(intMusicCount/pageList.$data.page_size)
     musicList.musics = [];
     for( intIndex in arrData['music']){
-        musicList.musics.push({music_id:arrData['music'][intIndex]['music_id'],music_name:arrData['music'][intIndex]['music_name'],artist_name:arrData['music'][intIndex]['artist_name'],music_file:arrData['music'][intIndex]['music_file']});
+        musicList.musics.push({music_id:arrData['music'][intIndex]['music_id'],music_name:arrData['music'][intIndex]['music_name'],
+        artist_name:arrData['music'][intIndex]['artist_name'],music_file:arrData['music'][intIndex]['music_file']});
     }
     setPagination(pageList.$data.pages_sum,pn,pn);
 }
@@ -60,7 +61,22 @@ function feedBackCallBack(pn,ps,data) {
     feedbackList.feedbacks = [];
     for( intIndex in arrData['feedback']){
         console.log(arrData['feedback'][intIndex]);
-        feedbackList.feedbacks.push({id:arrData['feedback'][intIndex]['id'],title:arrData['feedback'][intIndex]['title'],content:arrData['feedback'][intIndex]['content'],create_time:arrData['feedback'][intIndex]['create_time']});
+        feedbackList.feedbacks.push({id:arrData['feedback'][intIndex]['id'],title:arrData['feedback'][intIndex]['title'],
+        content:arrData['feedback'][intIndex]['content'],create_time:arrData['feedback'][intIndex]['create_time']});
+    }
+    setPagination(pageList.$data.pages_sum,pn,pn);
+}
+function userListCallBack(pn,ps,data) {
+    var arrData = data;
+    var intCount = arrData['count'];
+    userList.$data.users_count = intCount;
+    pageList.$data.pages_sum = Math.ceil(intCount/pageList.$data.page_size)
+    userList.users = [];
+    for( intIndex in arrData['users']){
+        console.log(arrData['users'][intIndex]);
+        userList.users.push({user_id:arrData['users'][intIndex]['user_id'],user_name:arrData['users'][intIndex]['user_name'],
+        user_email:arrData['users'][intIndex]['user_email'],user_sex:arrData['users'][intIndex]['user_sex'],
+        user_type:arrData['users'][intIndex]['user_type'],user_avatar:arrData['users'][intIndex]['user_avatar'],});
     }
     setPagination(pageList.$data.pages_sum,pn,pn);
 }
