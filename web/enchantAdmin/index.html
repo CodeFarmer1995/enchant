@@ -16,6 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/music_list.css" />
   </head>
   <body>
     <!-- Fixed navbar -->
@@ -78,10 +79,12 @@
     <script type="text/javascript" src="js/change_page.js" ></script>
     <script type="text/javascript" src="js/lib.js" ></script>
     <script type="text/javascript" src="js/vue.min.js" ></script>
+    <script type="text/javascript" src="js/page.js" ></script>
     <script>
       var strLocalUrl = window.location.hash;
       var arrPageInfo = switchPage(strLocalUrl);
       var activePageLi = document.getElementById(arrPageInfo['li_id']);
+      $("#page-content").load("page/home.html");
       changePage(activePageLi,arrPageInfo['page_num']);
     </script>
    
