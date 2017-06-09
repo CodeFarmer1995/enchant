@@ -7,11 +7,21 @@ public class FeedBack {
     private int id;
     private String title;
     private String content;
+    private String create_time;
 
-    public FeedBack(int id, String title, String content) {
+    public String getCreate_time() {
+        return create_time;
+    }
+
+    public void setCreate_time(String create_time) {
+        this.create_time = create_time;
+    }
+
+    public FeedBack(int id, String title, String content, String create_time) {
         this.id = id;
         this.title = title;
         this.content = content;
+        this.create_time = create_time;
     }
 
     public int getId() {

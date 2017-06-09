@@ -11,7 +11,7 @@
               <td>时间</td>
             </tr>
             <tr  v-for="feedback in feedbacks" class="active">
-              <td>{{feedback.user_id}}</td>
+              <td>{{feedback.id}}</td>
               <td>{{feedback.title}}</td>
               <td>{{feedback.content}}</td>
               <td>{{feedback.create_time}}</td>
@@ -37,14 +37,13 @@
 </div>
       </div>
 <script>
-    var strUrl = 'http://127.0.0.1/music.php';
+    var strUrl = '/enchant/getFeedback.action';
     var feedbackList = new Vue({
        el: '#feedback_list',
        data: {
           feedback_count : 0,
           feedbacks: [
-              { user_id: '学习 JavaScript',title: '辣鸡',content: 'asdasdas',create_time:'qweqwe'},
-          ]
+            ]
       }
      });
 
@@ -54,7 +53,7 @@
        pages_sum : 1,
        current_page : 1,
        focus_page : 1,
-       page_size : 3,
+       page_size : 10,
        pages: [
         ]
        

@@ -56,16 +56,16 @@ public class SearchMusic extends ActionSupport {
         int offset = (sn - 1) * sc;
         musicList=new ArrayList<MusicItem>();
 
+        String querySQL="";
         if(artist_name.equals(""))
-            artist_name="%";
+             querySQL = "SELECT music_id,music_name,artist_name,music_file FROM music_info WHERE   music_name LIKE '"+music_name+"' ";
         if(music_name.equals(""))
-            music_name="%";
+             querySQL = "SELECT music_id,music_name,artist_name,music_file FROM music_info WHERE  artist_name like '"+artist_name+"' ";
 
         ServletContext sctx = ServletActionContext.getServletContext();
         Connection con = (Connection) sctx.getAttribute("DBCon");
         ResultSet rs;
 
-       String querySQL = "SELECT music_id,music_name,artist_name,music_file FROM music_info WHERE  artist_name like '"+artist_name+"' AND  music_name LIKE '"+music_name+"' ";
         System.out.println(querySQL);
        rs=con.createStatement().executeQuery(querySQL);
        while (rs.next()){

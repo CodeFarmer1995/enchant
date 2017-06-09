@@ -12,8 +12,9 @@ import java.util.ArrayList;
 public class GetMusicList extends ActionSupport implements status {
         private ArrayList<Music> musicList;
         private Music[] music;
-        private int sc;  //limit
-        private int  sn;  //offset
+        private int ps;  //limit
+        private int  pn;  //offset
+        private int count;
 
     public Music[] getMusic() {
         return music;
@@ -31,27 +32,35 @@ public class GetMusicList extends ActionSupport implements status {
         this.musicList = musicList;
     }
 
-    public int getSc() {
-        return sc;
+    public int getPs() {
+        return ps;
     }
 
-    public void setSc(int sc) {
-        this.sc = sc;
+    public void setPs(int ps) {
+        this.ps = ps;
     }
 
-    public int getSn() {
-        return sn;
+    public int getPn() {
+        return pn;
     }
 
-    public void setSn(int sn) {
-        this.sn = sn;
+    public void setPn(int pn) {
+        this.pn = pn;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 
     @Override
     public String execute() throws Exception {
-        int limit=sc;
-        int offset=(sn-1)*sc;
-        System.out.println(sc+" "+sn);
+        int limit=ps;
+        int offset=(pn-1)*ps;
+        System.out.println(ps+" "+pn);
         musicList=new ArrayList<Music>();
 
         ServletContext sctx= ServletActionContext.getServletContext();
@@ -99,7 +108,12 @@ public class GetMusicList extends ActionSupport implements status {
             System.out.println(musiciteam.getAlbum()+" "+musiciteam.getUpdate_time());
             musicList.add(musiciteam);
         }
-
+        querySql = "select * from music_info";
+        rs=con.createStatement().executeQuery(querySql);
+        count=0;
+        while (rs.next()){
+            count++;
+        }
         music=(Music[])musicList.toArray(new Music[0]);
         System.out.println(music.length);
         return SUCCESS;

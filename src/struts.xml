@@ -132,7 +132,8 @@
                 music\[\d+\]\.music_type,
                 music\[\d+\]\.ext_info,
                 music\[\d+\]\.update_time,
-                music\[\d+\]\.create_time
+                music\[\d+\]\.create_time,
+                    count
                 </param>
             </result>
         </action>
@@ -198,7 +199,7 @@
             </interceptor-ref>
             <result name="success" type="json">
                 <param name="excludeProperties">
-                    sc,sn
+                    ps,pn
                 </param>
             </result>
         </action>
@@ -238,6 +239,19 @@
             <result type="json" name="success">
                 <param name="excludeProperties">
                     send_user_id,to_user_id
+                </param>
+            </result>
+        </action>
+        <action name="deleteMusic" class="actions.DeleteMusic" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result name="success" type="json">
+                <param name="includeProperties">
+                    STATUS
                 </param>
             </result>
         </action>

@@ -40,18 +40,21 @@ public class GetMessages extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
+        System.out.println(send_user_id+" "+to_user_id);
         messages=new ArrayList<message>();
         ServletContext sctx = ServletActionContext.getServletContext();
         Connection con = (Connection) sctx.getAttribute("DBCon");
         ResultSet rs;
 
-        String querySQL="SELECT title,content,create_time FROM unreadmessages";
+        String querySQL="SELECT title,content,create_time FROM unreadmessages WHERE send_user_id="+send_user_id+" AND to_user_id="+to_user_id+"";
 
         rs=con.createStatement().executeQuery(querySQL);
 
         while (rs.next()){
             messages.add(new message(rs.getString(1),rs.getString(2),rs.getString(3)));
         }
+
+        //con.createStatement().executeUpdate("DELETE FROM unreadmessages WHERE send_user_id="+send_user_id+" AND  to_user_id="+to_user_id+"");
 
         return SUCCESS;
     }

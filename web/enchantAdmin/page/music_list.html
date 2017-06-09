@@ -118,7 +118,7 @@
 </nav>
     </div>      
 <script>
-    var strUrl = 'http://127.0.0.1/music.php';
+    var strUrl = '/enchant/getMusicList.action';
     var musicList = new Vue({
        el: '#music_list',
        data: {
@@ -145,7 +145,7 @@
            if(bolDelete) {
                $.ajax({  type: 'POST',
                          contentType: "application/json;charset=utf-8",
-                         url: "delete.jsp", 
+                         url: "/enchant/deleteMusic.action",
                          data: strData,
                          dataType:'json',
                          success: function(){
@@ -166,7 +166,7 @@
        pages_sum : 1,
        current_page : 1,
        focus_page : 1,
-       page_size : 3,
+       page_size : 5,
        pages: [
         ]
        
