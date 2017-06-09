@@ -185,6 +185,7 @@ public class UploadMusic extends ActionSupport implements status {
         pstat.setLong(12,System.currentTimeMillis() / 1000);
         pstat.setLong(13,System.currentTimeMillis() / 1000);
         System.out.println(pstat.toString());
+        System.out.println(pstat.toString());
         pstat.execute();
 
         System.out.println(uagent);

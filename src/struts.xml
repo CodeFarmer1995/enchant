@@ -132,7 +132,8 @@
                 music\[\d+\]\.music_type,
                 music\[\d+\]\.ext_info,
                 music\[\d+\]\.update_time,
-                music\[\d+\]\.create_time
+                music\[\d+\]\.create_time,
+                    count
                 </param>
             </result>
         </action>

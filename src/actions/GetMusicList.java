@@ -14,6 +14,7 @@ public class GetMusicList extends ActionSupport implements status {
         private Music[] music;
         private int sc;  //limit
         private int  sn;  //offset
+        private int count;
 
     public Music[] getMusic() {
         return music;
@@ -45,6 +46,14 @@ public class GetMusicList extends ActionSupport implements status {
 
     public void setSn(int sn) {
         this.sn = sn;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 
     @Override
@@ -99,7 +108,12 @@ public class GetMusicList extends ActionSupport implements status {
             System.out.println(musiciteam.getAlbum()+" "+musiciteam.getUpdate_time());
             musicList.add(musiciteam);
         }
-
+        querySql = "select * from music_info";
+        rs=con.createStatement().executeQuery(querySql);
+        count=0;
+        while (rs.next()){
+            count++;
+        }
         music=(Music[])musicList.toArray(new Music[0]);
         System.out.println(music.length);
         return SUCCESS;
