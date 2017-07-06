@@ -76,7 +76,8 @@ public class MusicFavourite extends ActionSupport {
         System.out.println(favor);
         if(favor.equals("1") ){
             System.out.println(music_id+";"+path+";"+artist+";"+title);
-            jedis.sadd(id,music_id+";"+path+";"+artist+";"+title);
+            if(!jedis.sismember(id,music_id+";"+path+";"+artist+";"+title))
+                jedis.sadd(id,music_id+";"+path+";"+artist+";"+title);
 
             System.out.println("add"+music_id+";"+path+";"+artist+";"+title);
         }

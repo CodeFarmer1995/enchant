@@ -66,6 +66,8 @@ public class SendMessage extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
+        if(send_user_id == 0)
+            send_user_id=1;
         if(title.equals(""))
             title="user message";
         ServletContext sctx = ServletActionContext.getServletContext();

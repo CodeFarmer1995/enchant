@@ -66,7 +66,6 @@ public class MyJSON extends ActionSupport {
     }
 
 
-
     public String getAge() {
         return age;
     }

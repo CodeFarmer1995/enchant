@@ -415,5 +415,18 @@
             </result>
         </action>
 
+        <action name="editMusic" class="actions.EditMusic" method="execute">
+            <interceptor-ref name="defaultStack">
+
+            </interceptor-ref>
+            <interceptor-ref name="json">
+
+            </interceptor-ref>
+            <result name="success" type="json">
+                <param name="includeProperties">
+                    STATUS
+                </param>
+            </result>
+        </action>
     </package>
 </struts>

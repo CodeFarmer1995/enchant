@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class EditMusic extends ActionSupport implements status {
     private String musicName;
@@ -161,10 +162,24 @@ public class EditMusic extends ActionSupport implements status {
         File saveFile;
         String saveFileName;
 
+        String music=null,cover=null,lrc=null;
+
+        ResultSet resultSet=con.createStatement().executeQuery("SELECT music_file,cover_file,lyric_file FROM music_info WHERE music_id="+music_id+" ");
+        if(resultSet.next()){
+            music=resultSet.getString(1);
+            cover=resultSet.getString(2);
+            lrc=resultSet.getString(3);
+        }
+
+        if (musicCoverFile != null){
         saveFileName=musicCoverFile.getName().substring(0,musicCoverFile.getName().length()-4)+"_"+musicCoverFileFileName;
         saveFile=new File((String)sctx.getAttribute("CoverPath"),saveFileName);
         FileUtils.copyFile(musicCoverFile,saveFile);
         pstat.setString(5,saveFileName);
+        }
+        else {
+            pstat.setString(5,cover);
+        }
 
         System.out.println(musicQuality);
         int quality=-1;
@@ -182,17 +197,26 @@ public class EditMusic extends ActionSupport implements status {
 
         pstat.setInt(7,Integer.parseInt(musicDuration.split(":")[0])*60+Integer.parseInt(musicDuration.split(":")[1]));
 
-        saveFileName=musicFile.getName().substring(0,musicFile.getName().length()-4)+"_"+musicFileFileName;
-        saveFile=new File((String)sctx.getAttribute("MusicPath"),saveFileName);
-        FileUtils.copyFile(musicCoverFile,saveFile);
-        pstat.setString(8,saveFileName);
+        if (music != null) {
+            saveFileName = musicFile.getName().substring(0, musicFile.getName().length() - 4) + "_" + musicFileFileName;
+            saveFile = new File((String) sctx.getAttribute("MusicPath"), saveFileName);
+            FileUtils.copyFile(musicCoverFile, saveFile);
+            pstat.setString(8, saveFileName);
+        }
+        else {
+            pstat.setString(8, music);
+        }
 
-        saveFileName=musicLyricFile.getName().substring(0,musicLyricFile.getName().length()-4)+"_"+musicLyricFileFileName;
-        System.out.println((String)sctx.getAttribute("LrcPath"));
-        saveFile=new File((String)sctx.getAttribute("LrcPath"),saveFileName);
-        FileUtils.copyFile(musicLyricFile,saveFile);
-        pstat.setString(9,saveFileName);
-
+        if (lrc != null) {
+            saveFileName = musicLyricFile.getName().substring(0, musicLyricFile.getName().length() - 4) + "_" + musicLyricFileFileName;
+            System.out.println((String) sctx.getAttribute("LrcPath"));
+            saveFile = new File((String) sctx.getAttribute("LrcPath"), saveFileName);
+            FileUtils.copyFile(musicLyricFile, saveFile);
+            pstat.setString(9, saveFileName);
+        }
+        else {
+            pstat.setString(9, lrc);
+        }
         pstat.setInt(10,0);
         pstat.setString(11,"");
         pstat.setLong(12,System.currentTimeMillis() / 1000);

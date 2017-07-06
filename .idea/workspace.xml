@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="722e4dcf-a2fb-4f7c-9569-2adc1cdcd9d5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/GetFavouriteMusic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/GetMusicComment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/GetMusicItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/GetMyinfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/Logout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/MusicFavourite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/ReleaseComment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/testJedis.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beans/FavoriteMusicItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beans/MusicCommnet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/EditAvatar.java" afterPath="$PROJECT_DIR$/src/actions/EditAvatar.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/EditMusic.java" afterPath="$PROJECT_DIR$/src/actions/EditMusic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/GetCode.java" afterPath="$PROJECT_DIR$/src/actions/GetCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/Login.java" afterPath="$PROJECT_DIR$/src/actions/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/listeners/InitServer.java" afterPath="$PROJECT_DIR$/src/listeners/InitServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/GetFeedBack.java" afterPath="$PROJECT_DIR$/src/actions/GetFeedBack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/GetMessages.java" afterPath="$PROJECT_DIR$/src/actions/GetMessages.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/MusicFavourite.java" afterPath="$PROJECT_DIR$/src/actions/MusicFavourite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/MyJSON.java" afterPath="$PROJECT_DIR$/src/actions/MyJSON.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/SearchMusic.java" afterPath="$PROJECT_DIR$/src/actions/SearchMusic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/SendMessage.java" afterPath="$PROJECT_DIR$/src/actions/SendMessage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/enchantAdmin/index.jsp" afterPath="$PROJECT_DIR$/web/enchantAdmin/index.jsp" />
     </list>
@@ -38,79 +30,112 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UploadMusic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/UploadMusic.java">
+      <file leaf-file-name="GetLatestMessage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/GetLatestMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2592">
-              <caret line="122" column="51" lean-forward="false" selection-start-line="122" selection-start-column="42" selection-end-line="122" selection-end-column="51" />
+            <state relative-caret-position="1044">
+              <caret line="42" column="75" lean-forward="false" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="75" />
               <folding>
-                <marker date="1496996740134" expanded="true" signature="4031:4221" ph="insert into music_info" />
+                <marker date="1496893165797" expanded="true" signature="979:1370" ph="SELECT msui,... messages" />
+                <marker date="1496893165797" expanded="true" signature="1085:1271" ph="SELECT send_... messages" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/struts.xml">
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="GetMusicComment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/GetMusicComment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9792">
-              <caret line="272" column="53" lean-forward="false" selection-start-line="272" selection-start-column="53" selection-end-line="272" selection-end-column="53" />
+            <state relative-caret-position="720">
+              <caret line="34" column="224" lean-forward="false" selection-start-line="34" selection-start-column="131" selection-end-line="34" selection-end-column="224" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditMusic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/EditMusic.java">
+      <file leaf-file-name="GetUserList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/GetUserList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5400">
-              <caret line="204" column="26" lean-forward="false" selection-start-line="204" selection-start-column="26" selection-end-line="204" selection-end-column="26" />
+            <state relative-caret-position="1800">
+              <caret line="77" column="142" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="142" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyJSON.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/MyJSON.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="802">
+              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MusicFavourite.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/actions/MusicFavourite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-91">
+              <caret line="77" column="31" lean-forward="false" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReleaseNotice.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/ReleaseNotice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1008">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
-                <marker date="1498009744726" expanded="true" signature="4222:4262" ph="DELETE FROM " />
-                <marker date="1498009744726" expanded="true" signature="4307:4508" ph="INSERT INTO music_info... " />
+                <marker date="1499192164247" expanded="true" signature="1400:1504" ph="insert into messages... " />
+                <marker date="1499192164247" expanded="true" signature="2150:2240" ph="select id fr... messages" />
+                <marker date="1499192164247" expanded="true" signature="2387:2416" ph="select user_... user_info" />
+                <marker date="1499192164247" expanded="true" signature="2610:2717" ph="INSERT INTO unreadboardcastmessages... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditAvatar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/EditAvatar.java">
+      <file leaf-file-name="SendMessage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/SendMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="41" column="38" lean-forward="false" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+            <state relative-caret-position="1440">
+              <caret line="69" column="27" lean-forward="false" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
               <folding>
-                <marker date="1497884555574" expanded="true" signature="884:952" ph="UPDATE user_... " />
+                <marker date="1499238467632" expanded="true" signature="1766:1939" ph="INSERT INTO messages... " />
+                <marker date="1499238467632" expanded="true" signature="2018:2197" ph="INSERT INTO unreadmessages... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetMyinfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/GetMyinfo.java">
+      <file leaf-file-name="GetMessages.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/GetMessages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1836">
-              <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="28" />
+            <state relative-caret-position="468">
+              <caret line="61" column="51" lean-forward="false" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="51" />
               <folding>
-                <marker date="1497408110867" expanded="true" signature="1114:1213" ph="SELECT user_... user_info" />
+                <marker date="1499239567883" expanded="true" signature="1346:1411" ph="SELECT title... unreadmessages" />
+                <marker date="1499239567883" expanded="true" signature="1346:1425" ph="SELECT messa... unreadmessages" />
+                <marker date="1499239567883" expanded="true" signature="1346:1451" ph="SELECT messa... unreadboardcastmessages" />
+                <marker date="1499239567883" expanded="true" signature="1687:1745" ph="SELECT title... messages" />
+                <marker date="1499239567883" expanded="true" signature="1969:2026" ph="SELECT title... messages" />
+                <marker date="1499239567883" expanded="true" signature="1969:2027" ph="SELECT title... messages" />
+                <marker date="1499239567883" expanded="true" signature="2170:2272" ph="SELECT title... unreadmessages" />
+                <marker date="1499239567883" expanded="true" signature="2170:2290" ph="SELECT title... unreadmessages" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetCode.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/actions/GetCode.java">
+      <file leaf-file-name="GetMessages.class" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/enchant/WEB-INF/classes/actions/GetMessages.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
-              <folding>
-                <marker date="1498187772511" expanded="true" signature="1123:1204" ph="select user_... user_info" />
-                <marker date="1498187772511" expanded="true" signature="1838:1914" ph="select email... email_code" />
-                <marker date="1498187772511" expanded="true" signature="2043:2107" ph="update email... " />
-                <marker date="1498187772511" expanded="true" signature="2235:2304" ph="INSERT INTO email_code" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,13 +153,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>send</find>
-      <find>getmu</find>
-      <find>getfee</find>
-      <find>mes</find>
-      <find>sc</find>
-      <find>user—</find>
-      <find>del</find>
       <find>delete.jsp</find>
       <find>count</find>
       <find>getuserlist</find>
@@ -158,6 +176,13 @@
       <find>uploa</find>
       <find>editm</find>
       <find>uplo</find>
+      <find>action</find>
+      <find>编辑</find>
+      <find>music_info</find>
+      <find>update_music</find>
+      <find>更新</find>
+      <find>editmu</find>
+      <find>admin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,12 +199,10 @@
       <list>
         <option value="$PROJECT_DIR$/web/enchantAdmin/page/notice.html" />
         <option value="$PROJECT_DIR$/web/enchantAdmin/login.html" />
-        <option value="$PROJECT_DIR$/src/actions/ReleaseNotice.java" />
         <option value="$PROJECT_DIR$/src/actions/getBoardCastMessages.java" />
         <option value="$PROJECT_DIR$/src/actions/getBroadcastMessages.java" />
         <option value="$PROJECT_DIR$/src/beans/bean.java" />
         <option value="$PROJECT_DIR$/src/beans/message.java" />
-        <option value="$PROJECT_DIR$/src/actions/MyJSON.java" />
         <option value="$PROJECT_DIR$/src/beans/Music.java" />
         <option value="$PROJECT_DIR$/src/actions/getLatestMessage.java" />
         <option value="$PROJECT_DIR$/src/actions/Register.java" />
@@ -189,19 +212,15 @@
         <option value="$PROJECT_DIR$/EchantTable.sql" />
         <option value="$PROJECT_DIR$/src/beans/MusicItem.java" />
         <option value="$PROJECT_DIR$/src/actions/GetLatestMessage.java" />
-        <option value="$PROJECT_DIR$/src/actions/SendMessage.java" />
-        <option value="$PROJECT_DIR$/src/actions/GetMessages.java" />
         <option value="$PROJECT_DIR$/src/beans/FeedBack.java" />
         <option value="$PROJECT_DIR$/web/enchantAdmin/page/feedback.html" />
         <option value="$PROJECT_DIR$/web/enchantAdmin/page/music_list.html" />
         <option value="$PROJECT_DIR$/src/actions/UploadMusic.java" />
         <option value="$PROJECT_DIR$/web/enchantAdmin/js/page.js" />
         <option value="$PROJECT_DIR$/web/enchantAdmin/page/user_list.html" />
-        <option value="$PROJECT_DIR$/src/actions/GetFeedBack.java" />
         <option value="$PROJECT_DIR$/src/actions/DeleteMusic.java" />
         <option value="$PROJECT_DIR$/src/actions/GetMusicList.java" />
         <option value="$PROJECT_DIR$/src/actions/GetUserList.java" />
-        <option value="$PROJECT_DIR$/src/actions/SearchMusic.java" />
         <option value="$PROJECT_DIR$/src/actions/SearchUser.java" />
         <option value="$PROJECT_DIR$/src/actions/GetMyinfo.java" />
         <option value="$PROJECT_DIR$/src/actions/Logout.java" />
@@ -217,12 +236,18 @@
         <option value="$PROJECT_DIR$/src/actions/getMusicItem.java" />
         <option value="$PROJECT_DIR$/src/actions/Login.java" />
         <option value="$PROJECT_DIR$/src/actions/GetMusicItem.java" />
-        <option value="$PROJECT_DIR$/web/enchantAdmin/index.jsp" />
-        <option value="$PROJECT_DIR$/src/actions/MusicFavourite.java" />
         <option value="$PROJECT_DIR$/src/actions/EditAvatar.java" />
+        <option value="$PROJECT_DIR$/src/actions/GetCode.java" />
+        <option value="$PROJECT_DIR$/src/actions/SearchMusic.java" />
         <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/src/actions/EditMusic.java" />
-        <option value="$PROJECT_DIR$/src/actions/GetCode.java" />
+        <option value="$PROJECT_DIR$/src/actions/GetFeedBack.java" />
+        <option value="$PROJECT_DIR$/src/actions/ReleaseNotice.java" />
+        <option value="$PROJECT_DIR$/web/enchantAdmin/index.jsp" />
+        <option value="$PROJECT_DIR$/src/actions/SendMessage.java" />
+        <option value="$PROJECT_DIR$/src/actions/MyJSON.java" />
+        <option value="$PROJECT_DIR$/src/actions/GetMessages.java" />
+        <option value="$PROJECT_DIR$/src/actions/MusicFavourite.java" />
       </list>
     </option>
   </component>
@@ -242,7 +267,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -439,9 +464,36 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javax.mail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javax.mail.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="enchant" />
@@ -476,7 +528,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchantAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enchantAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,10 +569,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -623,45 +697,12 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enchant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enchant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="artifacts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enchant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1353,7 +1394,19 @@
       <workItem from="1497960849129" duration="1173000" />
       <workItem from="1498005000900" duration="6530000" />
       <workItem from="1498144671319" duration="719000" />
-      <workItem from="1498176515172" duration="3967000" />
+      <workItem from="1498176515172" duration="7012000" />
+      <workItem from="1498441473543" duration="1632000" />
+      <workItem from="1498462657436" duration="1412000" />
+      <workItem from="1498524407459" duration="8769000" />
+      <workItem from="1498571568428" duration="30000" />
+      <workItem from="1498617287339" duration="7954000" />
+      <workItem from="1498629524974" duration="750000" />
+      <workItem from="1498896214934" duration="2000" />
+      <workItem from="1499161674551" duration="2518000" />
+      <workItem from="1499188723242" duration="12634000" />
+      <workItem from="1499238056074" duration="1700000" />
+      <workItem from="1499300160799" duration="688000" />
+      <workItem from="1499312531269" duration="2655000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize the project">
       <created>1494933645962</created>
@@ -1418,11 +1471,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497402390764</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Change email service">
+      <created>1498189112788</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1498189112788</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273428000" />
+    <option name="totallyTimeSpent" value="317217000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1434,17 +1494,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2793651" sideWeight="0.3453125" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25608465" sideWeight="0.35572916" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16927083" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16981132" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1457,11 +1517,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3026455" sideWeight="0.475" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.031746034" sideWeight="0.4937107" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2793651" sideWeight="0.6546875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25925925" sideWeight="0.64427084" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1745283" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1470,9 +1529,47 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22328043" sideWeight="0.47083333" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25608465" sideWeight="0.35572916" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1703125" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3121693" sideWeight="0.49583334" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.48541668" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3026455" sideWeight="0.47083333" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.031746034" sideWeight="0.4937107" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25608465" sideWeight="0.64427084" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -1490,7 +1587,8 @@
     <MESSAGE value="change html to jsp&#10;add messages relevant module" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="Add search module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add search module" />
+    <MESSAGE value="Change email service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change email service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1556,7 +1654,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/actions/EditMusic.java</url>
-          <line>133</line>
+          <line>134</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
@@ -1570,17 +1668,202 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/page/music_list.html">
+    <entry file="file://$PROJECT_DIR$/src/actions/GetBroadcastMessages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5292">
-          <caret line="147" column="51" lean-forward="false" selection-start-line="147" selection-start-column="51" selection-end-line="147" selection-end-column="51" />
+        <state relative-caret-position="605">
+          <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/listeners/InitServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+    <entry file="uml://JAVA/actions.GetCode">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.GetCode</OriginalElement>
+          <nodes>
+            <node x="" y="">com.opensymphony.xwork2.Validateable</node>
+            <node x="" y="">actions.GetCode</node>
+            <node x="" y="">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="" y="">actions.status</node>
+            <node x="" y="">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="" y="">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="" y="">com.opensymphony.xwork2.Action</node>
+            <node x="" y="">com.opensymphony.xwork2.TextProvider</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="408.0" y="240.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/actions.GetFavouriteMusic">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.GetFavouriteMusic</OriginalElement>
+          <nodes>
+            <node x="" y="">com.opensymphony.xwork2.Validateable</node>
+            <node x="" y="">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="" y="">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="" y="">actions.GetFavouriteMusic</node>
+            <node x="" y="">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="" y="">com.opensymphony.xwork2.Action</node>
+            <node x="" y="">com.opensymphony.xwork2.TextProvider</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="408.0" y="320.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/actions.GetFeedBack">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.GetFeedBack</OriginalElement>
+          <nodes>
+            <node x="" y="">actions.GetFeedBack</node>
+            <node x="" y="">com.opensymphony.xwork2.Validateable</node>
+            <node x="" y="">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="" y="">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="" y="">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="" y="">com.opensymphony.xwork2.Action</node>
+            <node x="" y="">com.opensymphony.xwork2.TextProvider</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="408.0" y="260.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/actions.GetLatestMessage">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.GetLatestMessage</OriginalElement>
+          <nodes>
+            <node x="" y="">actions.GetLatestMessage</node>
+            <node x="" y="">com.opensymphony.xwork2.Validateable</node>
+            <node x="" y="">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="" y="">actions.status</node>
+            <node x="" y="">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="" y="">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="" y="">com.opensymphony.xwork2.Action</node>
+            <node x="" y="">com.opensymphony.xwork2.TextProvider</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="408.0" y="300.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/actions.GetMusicComment">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.GetMusicComment</OriginalElement>
+          <nodes>
+            <node x="" y="">com.opensymphony.xwork2.Validateable</node>
+            <node x="" y="">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="" y="">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="" y="">actions.GetMusicComment</node>
+            <node x="" y="">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="" y="">com.opensymphony.xwork2.Action</node>
+            <node x="" y="">com.opensymphony.xwork2.TextProvider</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="408.0" y="200.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/actions.GetMusicItem">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.GetMusicItem</OriginalElement>
+          <nodes>
+            <node x="" y="">com.opensymphony.xwork2.Validateable</node>
+            <node x="" y="">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="" y="">actions.GetMusicItem</node>
+            <node x="" y="">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="" y="">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="" y="">com.opensymphony.xwork2.Action</node>
+            <node x="" y="">com.opensymphony.xwork2.TextProvider</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="408.0" y="220.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/actions.GetMusicList">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.GetMusicList</OriginalElement>
+          <nodes>
+            <node x="" y="">com.opensymphony.xwork2.Validateable</node>
+            <node x="" y="">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="" y="">actions.status</node>
+            <node x="" y="">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="" y="">actions.GetMusicList</node>
+            <node x="" y="">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="" y="">com.opensymphony.xwork2.Action</node>
+            <node x="" y="">com.opensymphony.xwork2.TextProvider</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="408.0" y="160.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
@@ -1590,255 +1873,607 @@
           <ID>JAVA</ID>
           <OriginalElement>actions.GetUserList</OriginalElement>
           <nodes>
-            <node x="" y="">actions.ReleaseNotice</node>
-            <node x="" y="">actions.GetFeedBack</node>
-            <node x="" y="">actions.GetMessages</node>
-            <node x="" y="">actions.SearchMusic</node>
-            <node x="" y="">actions.EditAvatar</node>
-            <node x="" y="">actions.Login</node>
-            <node x="" y="">actions.EditMusic</node>
-            <node x="" y="">actions.SendMessage</node>
-            <node x="" y="">actions.GetCode</node>
-            <node x="" y="">actions.status</node>
-            <node x="" y="">com.opensymphony.xwork2.interceptor.ValidationAware</node>
-            <node x="" y="">actions.GetMyinfo</node>
-            <node x="" y="">actions.SearchUser</node>
-            <node x="" y="">actions.DeleteMusic</node>
-            <node x="" y="">java.io.Serializable</node>
-            <node x="" y="">actions.GetLatestMessage</node>
             <node x="" y="">com.opensymphony.xwork2.Validateable</node>
-            <node x="" y="">actions.GetBroadcastMessages</node>
             <node x="" y="">actions.GetUserList</node>
             <node x="" y="">com.opensymphony.xwork2.LocaleProvider</node>
             <node x="" y="">com.opensymphony.xwork2.ActionSupport</node>
-            <node x="" y="">actions.GetMusicList</node>
+            <node x="" y="">com.opensymphony.xwork2.interceptor.ValidationAware</node>
             <node x="" y="">com.opensymphony.xwork2.Action</node>
-            <node x="" y="">actions.Register</node>
             <node x="" y="">com.opensymphony.xwork2.TextProvider</node>
+            <node x="" y="">java.io.Serializable</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.6273569023569021" x="-617.0" y="-632.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="408.0" y="160.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Fields</Category>
+            <Category>Properties</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/beans.message">
+    <entry file="uml://JAVA/actions.Login">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
-          <OriginalElement>beans.message</OriginalElement>
+          <OriginalElement>actions.Login</OriginalElement>
           <nodes>
-            <node x="-470.0" y="-243.0">beans.message</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-336.0" y="-57.0" />
-          <SelectedNodes>
-            <node>beans.message</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/Music.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/beans.Music">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>beans.Music</OriginalElement>
-          <nodes>
-            <node x="-199.16666666666669" y="-123.33333333333331">beans.Music</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="-288.0" y="15.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/MusicItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="11" column="88" lean-forward="false" selection-start-line="11" selection-start-column="88" selection-end-line="11" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/UserItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/beans.User">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>beans.User</OriginalElement>
-          <nodes>
-            <node x="1.538461538461604" y="76.15384615384616">beans.User</node>
-            <node x="106.5" y="0.0">java.io.Serializable</node>
+            <node x="331.0" y="34.5">com.opensymphony.xwork2.Validateable</node>
+            <node x="909.0" y="23.0">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="220.50000000000006" y="228.0">actions.status</node>
+            <node x="322.50000000000006" y="159.0">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="471.0" y="0.0">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="805.0" y="34.5">com.opensymphony.xwork2.Action</node>
+            <node x="264.50000000000006" y="377.0">actions.Login</node>
+            <node x="0.0" y="23.0">com.opensymphony.xwork2.TextProvider</node>
+            <node x="197.0" y="34.5">java.io.Serializable</node>
           </nodes>
           <notes />
           <edges>
-            <edge source="beans.User" target="java.io.Serializable">
-              <point x="0.0" y="-118.5" />
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="java.io.Serializable">
+              <point x="-93.50000000000006" y="-84.0" />
+              <point x="416.0" y="129.0" />
+              <point x="254.0" y="129.0" />
               <point x="0.0" y="15.0" />
             </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.interceptor.ValidationAware">
+              <point x="31.16666666666663" y="-84.0" />
+              <point x="540.6666666666667" y="119.0" />
+              <point x="628.0" y="119.0" />
+              <point x="0.0" y="49.5" />
+            </edge>
+            <edge source="actions.Login" target="com.opensymphony.xwork2.ActionSupport">
+              <point x="60.5" y="-95.5" />
+              <point x="446.00000000000006" y="352.0" />
+              <point x="509.50000000000006" y="352.0" />
+              <point x="0.0" y="84.0" />
+            </edge>
+            <edge source="actions.Login" target="actions.status">
+              <point x="-60.5" y="-95.5" />
+              <point x="325.00000000000006" y="352.0" />
+              <point x="261.50000000000006" y="352.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Action">
+              <point x="93.5" y="-84.0" />
+              <point x="603.0" y="129.0" />
+              <point x="847.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.TextProvider">
+              <point x="-155.83333333333343" y="-84.0" />
+              <point x="353.66666666666663" y="139.0" />
+              <point x="88.5" y="139.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Validateable">
+              <point x="-31.166666666666686" y="-84.0" />
+              <point x="478.33333333333337" y="119.0" />
+              <point x="391.0" y="119.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.LocaleProvider">
+              <point x="155.83333333333337" y="-84.0" />
+              <point x="665.3333333333335" y="139.0" />
+              <point x="976.0" y="139.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.3000000000000003" x="-258.0" y="70.0" />
-          <SelectedNodes />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-144.0" y="74.0" />
+          <SelectedNodes>
+            <node>actions.Login</node>
+          </SelectedNodes>
           <Categories>
-            <Category>Fields</Category>
+            <Category>Properties</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/FeedBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="19" column="79" lean-forward="false" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/beans.MusicItem">
+    <entry file="uml://JAVA/actions.MusicFavourite">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
-          <OriginalElement>beans.MusicItem</OriginalElement>
+          <OriginalElement>actions.MusicFavourite</OriginalElement>
           <nodes>
-            <node x="0.0" y="0.0">beans.MusicItem</node>
+            <node x="331.0" y="34.5">com.opensymphony.xwork2.Validateable</node>
+            <node x="909.0" y="23.0">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="322.5" y="159.0">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="471.0" y="0.0">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="394.0" y="377.0">actions.MusicFavourite</node>
+            <node x="805.0" y="34.5">com.opensymphony.xwork2.Action</node>
+            <node x="0.0" y="23.0">com.opensymphony.xwork2.TextProvider</node>
+            <node x="197.0" y="34.5">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="java.io.Serializable">
+              <point x="-93.50000000000006" y="-84.0" />
+              <point x="415.99999999999994" y="129.0" />
+              <point x="254.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.interceptor.ValidationAware">
+              <point x="31.16666666666663" y="-84.0" />
+              <point x="540.6666666666666" y="119.0" />
+              <point x="628.0" y="119.0" />
+              <point x="0.0" y="49.5" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Action">
+              <point x="93.5" y="-84.0" />
+              <point x="603.0" y="129.0" />
+              <point x="847.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.TextProvider">
+              <point x="-155.83333333333343" y="-84.0" />
+              <point x="353.6666666666666" y="139.0" />
+              <point x="88.5" y="139.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Validateable">
+              <point x="-31.166666666666686" y="-84.0" />
+              <point x="478.3333333333333" y="119.0" />
+              <point x="391.0" y="119.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.LocaleProvider">
+              <point x="155.83333333333337" y="-84.0" />
+              <point x="665.3333333333334" y="139.0" />
+              <point x="976.0" y="139.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+            <edge source="actions.MusicFavourite" target="com.opensymphony.xwork2.ActionSupport">
+              <point x="0.0" y="-95.5" />
+              <point x="0.0" y="84.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-144.0" y="-6.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/actions.Register">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.Register</OriginalElement>
+          <nodes>
+            <node x="" y="">com.opensymphony.xwork2.Validateable</node>
+            <node x="" y="">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="" y="">actions.status</node>
+            <node x="" y="">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="" y="">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="" y="">com.opensymphony.xwork2.Action</node>
+            <node x="" y="">actions.Register</node>
+            <node x="" y="">com.opensymphony.xwork2.TextProvider</node>
+            <node x="" y="">java.io.Serializable</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-332.0" y="-57.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="408.0" y="180.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Inner Classes</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/actions.ReleaseComment">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.ReleaseComment</OriginalElement>
+          <nodes>
+            <node x="387.5" y="377.0">actions.ReleaseComment</node>
+            <node x="331.0" y="34.5">com.opensymphony.xwork2.Validateable</node>
+            <node x="909.0" y="23.0">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="322.5" y="159.0">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="471.0" y="0.0">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="805.0" y="34.5">com.opensymphony.xwork2.Action</node>
+            <node x="0.0" y="23.0">com.opensymphony.xwork2.TextProvider</node>
+            <node x="197.0" y="34.5">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="java.io.Serializable">
+              <point x="-93.50000000000006" y="-84.0" />
+              <point x="415.99999999999994" y="129.0" />
+              <point x="254.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.interceptor.ValidationAware">
+              <point x="31.16666666666663" y="-84.0" />
+              <point x="540.6666666666666" y="119.0" />
+              <point x="628.0" y="119.0" />
+              <point x="0.0" y="49.5" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Action">
+              <point x="93.5" y="-84.0" />
+              <point x="603.0" y="129.0" />
+              <point x="847.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.TextProvider">
+              <point x="-155.83333333333343" y="-84.0" />
+              <point x="353.6666666666666" y="139.0" />
+              <point x="88.5" y="139.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Validateable">
+              <point x="-31.166666666666686" y="-84.0" />
+              <point x="478.3333333333333" y="119.0" />
+              <point x="391.0" y="119.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="actions.ReleaseComment" target="com.opensymphony.xwork2.ActionSupport">
+              <point x="0.0" y="-84.0" />
+              <point x="0.0" y="84.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.LocaleProvider">
+              <point x="155.83333333333337" y="-84.0" />
+              <point x="665.3333333333334" y="139.0" />
+              <point x="976.0" y="139.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-144.0" y="-46.0" />
           <SelectedNodes>
-            <node>beans.MusicItem</node>
+            <node>actions.ReleaseComment</node>
           </SelectedNodes>
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/ReleaseComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2196">
+          <caret line="87" column="45" lean-forward="false" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="312" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/actions.ReleaseNotice">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.ReleaseNotice</OriginalElement>
+          <nodes>
+            <node x="539.0" y="377.0">actions.ReleaseNotice</node>
+            <node x="331.0" y="34.5">com.opensymphony.xwork2.Validateable</node>
+            <node x="909.0" y="23.0">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="716.5" y="228.0">actions.status</node>
+            <node x="322.5" y="159.0">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="471.0" y="0.0">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="805.0" y="34.5">com.opensymphony.xwork2.Action</node>
+            <node x="0.0" y="23.0">com.opensymphony.xwork2.TextProvider</node>
+            <node x="197.0" y="34.5">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="actions.ReleaseNotice" target="actions.status">
+              <point x="47.25" y="-49.5" />
+              <point x="680.75" y="352.0" />
+              <point x="757.5" y="352.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="java.io.Serializable">
+              <point x="-93.50000000000006" y="-84.0" />
+              <point x="416.0" y="129.0" />
+              <point x="254.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.interceptor.ValidationAware">
+              <point x="31.16666666666663" y="-84.0" />
+              <point x="540.6666666666666" y="119.0" />
+              <point x="628.0" y="119.0" />
+              <point x="0.0" y="49.5" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Action">
+              <point x="93.5" y="-84.0" />
+              <point x="603.0" y="129.0" />
+              <point x="847.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.TextProvider">
+              <point x="-155.83333333333343" y="-84.0" />
+              <point x="353.66666666666663" y="139.0" />
+              <point x="88.5" y="139.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Validateable">
+              <point x="-31.166666666666686" y="-84.0" />
+              <point x="478.33333333333337" y="119.0" />
+              <point x="391.0" y="119.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="actions.ReleaseNotice" target="com.opensymphony.xwork2.ActionSupport">
+              <point x="-47.25" y="-49.5" />
+              <point x="586.25" y="352.0" />
+              <point x="509.5" y="352.0" />
+              <point x="0.0" y="84.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.LocaleProvider">
+              <point x="155.83333333333337" y="-84.0" />
+              <point x="665.3333333333334" y="139.0" />
+              <point x="976.0" y="139.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="19.0" y="377.0" />
+          <SelectedNodes>
+            <node>actions.ReleaseNotice</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/actions.SearchMusic">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.SearchMusic</OriginalElement>
+          <nodes>
+            <node x="455.0" y="34.5">com.opensymphony.xwork2.Validateable</node>
+            <node x="197.0" y="23.0">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="267.0" y="149.0">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="361.5" y="367.0">actions.SearchMusic</node>
+            <node x="595.0" y="0.0">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="351.0" y="34.5">com.opensymphony.xwork2.Action</node>
+            <node x="0.0" y="23.0">com.opensymphony.xwork2.TextProvider</node>
+            <node x="929.0" y="34.5">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="java.io.Serializable">
+              <point x="155.83333333333337" y="-84.0" />
+              <point x="609.8333333333334" y="129.0" />
+              <point x="986.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.interceptor.ValidationAware">
+              <point x="93.5" y="-84.0" />
+              <point x="547.5" y="119.0" />
+              <point x="752.0" y="119.0" />
+              <point x="0.0" y="49.5" />
+            </edge>
+            <edge source="actions.SearchMusic" target="com.opensymphony.xwork2.ActionSupport">
+              <point x="0.0" y="-84.0" />
+              <point x="0.0" y="84.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Action">
+              <point x="-31.166666666666686" y="-84.0" />
+              <point x="422.83333333333337" y="129.0" />
+              <point x="393.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.TextProvider">
+              <point x="-155.83333333333343" y="-84.0" />
+              <point x="298.16666666666663" y="129.0" />
+              <point x="88.5" y="129.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Validateable">
+              <point x="31.16666666666663" y="-84.0" />
+              <point x="485.16666666666663" y="129.0" />
+              <point x="515.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.LocaleProvider">
+              <point x="-93.50000000000006" y="-84.0" />
+              <point x="360.5" y="119.0" />
+              <point x="264.0" y="119.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="19.0" y="-26.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/actions.SearchUser">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>actions.SearchUser</OriginalElement>
+          <nodes>
+            <node x="343.0" y="367.0">actions.SearchUser</node>
+            <node x="455.0" y="34.5">com.opensymphony.xwork2.Validateable</node>
+            <node x="197.0" y="23.0">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="267.0" y="149.0">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="595.0" y="0.0">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="351.0" y="34.5">com.opensymphony.xwork2.Action</node>
+            <node x="0.0" y="23.0">com.opensymphony.xwork2.TextProvider</node>
+            <node x="929.0" y="34.5">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="java.io.Serializable">
+              <point x="155.83333333333337" y="-84.0" />
+              <point x="609.8333333333334" y="129.0" />
+              <point x="986.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="actions.SearchUser" target="com.opensymphony.xwork2.ActionSupport">
+              <point x="0.0" y="-84.0" />
+              <point x="0.0" y="84.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.interceptor.ValidationAware">
+              <point x="93.5" y="-84.0" />
+              <point x="547.5" y="119.0" />
+              <point x="752.0" y="119.0" />
+              <point x="0.0" y="49.5" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Action">
+              <point x="-31.166666666666686" y="-84.0" />
+              <point x="422.83333333333337" y="129.0" />
+              <point x="393.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.TextProvider">
+              <point x="-155.83333333333343" y="-84.0" />
+              <point x="298.16666666666663" y="129.0" />
+              <point x="88.5" y="129.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Validateable">
+              <point x="31.16666666666663" y="-84.0" />
+              <point x="485.16666666666663" y="129.0" />
+              <point x="515.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.LocaleProvider">
+              <point x="-93.50000000000006" y="-84.0" />
+              <point x="360.5" y="119.0" />
+              <point x="264.0" y="119.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="19.0" y="14.0" />
+          <SelectedNodes>
+            <node>actions.SearchUser</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.lang.String">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.lang.String</OriginalElement>
+          <nodes>
+            <node x="" y="">java.lang.CharSequence</node>
+            <node x="" y="">java.lang.Comparable</node>
+            <node x="" y="">java.lang.String</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="203.0" y="55.0" />
+          <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/jre/lib/ext/jedis-2.9.0.jar!/redis/clients/jedis/JedisCommands.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="131" column="28" lean-forward="false" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/actions.status">
+    <entry file="uml://JAVA/actions.SendMessage">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
-          <OriginalElement>actions.status</OriginalElement>
+          <OriginalElement>actions.SendMessage</OriginalElement>
           <nodes>
-            <node x="" y="">actions.status</node>
+            <node x="455.0" y="34.5">com.opensymphony.xwork2.Validateable</node>
+            <node x="337.5" y="367.0">actions.SendMessage</node>
+            <node x="197.0" y="23.0">com.opensymphony.xwork2.LocaleProvider</node>
+            <node x="267.0" y="149.0">com.opensymphony.xwork2.ActionSupport</node>
+            <node x="595.0" y="0.0">com.opensymphony.xwork2.interceptor.ValidationAware</node>
+            <node x="351.0" y="34.5">com.opensymphony.xwork2.Action</node>
+            <node x="0.0" y="23.0">com.opensymphony.xwork2.TextProvider</node>
+            <node x="929.0" y="34.5">java.io.Serializable</node>
           </nodes>
           <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.4000000000000001" x="47.0" y="50.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GetBroadcastMessages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="978">
-          <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/sql/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/Logout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/beans.FeedBack">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>beans.FeedBack</OriginalElement>
-          <nodes>
-            <node x="-112.5" y="-69.99999999999999">beans.FeedBack</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="-264.0" y="24.0" />
+          <edges>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="java.io.Serializable">
+              <point x="155.83333333333337" y="-84.0" />
+              <point x="609.8333333333334" y="129.0" />
+              <point x="986.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.interceptor.ValidationAware">
+              <point x="93.5" y="-84.0" />
+              <point x="547.5" y="119.0" />
+              <point x="752.0" y="119.0" />
+              <point x="0.0" y="49.5" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Action">
+              <point x="-31.166666666666686" y="-84.0" />
+              <point x="422.83333333333337" y="129.0" />
+              <point x="393.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="actions.SendMessage" target="com.opensymphony.xwork2.ActionSupport">
+              <point x="0.0" y="-84.0" />
+              <point x="0.0" y="84.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.TextProvider">
+              <point x="-155.83333333333343" y="-84.0" />
+              <point x="298.16666666666663" y="129.0" />
+              <point x="88.5" y="129.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.Validateable">
+              <point x="31.16666666666663" y="-84.0" />
+              <point x="485.16666666666663" y="129.0" />
+              <point x="515.0" y="129.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.opensymphony.xwork2.ActionSupport" target="com.opensymphony.xwork2.LocaleProvider">
+              <point x="-93.50000000000006" y="-84.0" />
+              <point x="360.5" y="119.0" />
+              <point x="264.0" y="119.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="19.0" y="-26.0" />
           <SelectedNodes>
-            <node>beans.FeedBack</node>
+            <node>actions.SendMessage</node>
           </SelectedNodes>
           <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
+            <Category>Properties</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/DeleteMusic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="38" column="76" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/EditAvatar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="40" column="94" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="115" column="62" lean-forward="false" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="62" />
+        <state relative-caret-position="766">
+          <caret line="128" column="5" lean-forward="true" selection-start-line="75" selection-start-column="3" selection-end-line="128" selection-end-column="5" />
           <folding>
             <marker date="1496806031511" expanded="true" signature="1884:2047" ph="insert into user_info" />
             <marker date="1496806031511" expanded="true" signature="2077:2144" ph="select email... users" />
@@ -1848,121 +2483,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/MusicCommnet.java">
+    <entry file="file://$PROJECT_DIR$/src/actions/SearchUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="802">
+          <caret line="75" column="169" lean-forward="false" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="169" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/bean.java">
+    <entry file="file://$PROJECT_DIR$/src/actions/SearchMusic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/LatestMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/ReleaseNotice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <marker date="1496883021438" expanded="true" signature="1400:1504" ph="insert into messages... " />
-            <marker date="1496883021438" expanded="true" signature="2150:2240" ph="select id fr... messages" />
-            <marker date="1496883021438" expanded="true" signature="2387:2416" ph="select user_... user_info" />
-            <marker date="1496883021438" expanded="true" signature="2610:2717" ph="INSERT INTO unreadboardcastmessages... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/jre/lib/ext/jedis-2.9.0.jar!/redis/clients/jedis/Jedis.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="438" column="16" lean-forward="false" selection-start-line="438" selection-start-column="16" selection-end-line="438" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GetUserList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="69" column="16" lean-forward="false" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/ReleaseComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1764">
-          <caret line="75" column="38" lean-forward="false" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/testJedis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GetMusicComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/enchant/WEB-INF/classes/actions/MusicFavourite.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/FavoriteMusicItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/SendMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GetFeedBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="71" column="23" lean-forward="false" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GetLatestMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GetMessages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        <state relative-caret-position="802">
+          <caret line="75" column="164" lean-forward="false" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="164" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/GetMusicList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3276">
-          <caret line="118" column="23" lean-forward="false" selection-start-line="59" selection-start-column="3" selection-end-line="118" selection-end-column="23" />
+        <state relative-caret-position="586">
+          <caret line="102" column="37" lean-forward="true" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
           <folding>
             <marker date="1497351498856" expanded="true" signature="1550:1563" ph="SELECT count... " />
             <marker date="1497351498856" expanded="true" signature="1550:1588" ph="SELECT count... music_info" />
@@ -1974,39 +2512,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GetMusicItem.java">
+    <entry file="file://$PROJECT_DIR$/src/actions/status.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GetFavouriteMusic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="53" column="9" lean-forward="false" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/sql/Statement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+        <state relative-caret-position="144">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4428">
-          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+        <state relative-caret-position="281">
+          <caret line="157" column="82" lean-forward="false" selection-start-line="157" selection-start-column="77" selection-end-line="157" selection-end-column="82" />
           <folding>
             <marker date="1497798932587" expanded="true" signature="2109:2168" ph="select passw... users" />
             <marker date="1497798932587" expanded="true" signature="2109:2198" ph="select passw... users" />
@@ -2016,42 +2533,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/status.java">
+    <entry file="file://$PROJECT_DIR$/src/actions/GetMusicItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <caret line="41" column="81" lean-forward="false" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/struts-2.5.10.1-min-lib/lib/struts2-core-2.5.10.1.jar!/struts-default.xml">
+    <entry file="file://$PROJECT_DIR$/out/artifacts/enchant/WEB-INF/classes/actions/ReleaseNotice.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="211" column="91" lean-forward="true" selection-start-line="211" selection-start-column="91" selection-end-line="211" selection-end-column="91" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/struts-2.5.10.1-min-lib/lib/struts2-core-2.5.10.1.jar!/com/opensymphony/xwork2/interceptor/ParametersInterceptor.class">
+    <entry file="file://$PROJECT_DIR$/src/actions/GetFavouriteMusic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/MusicFavourite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="77" column="4" lean-forward="false" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/UploadMusic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2592">
-          <caret line="122" column="51" lean-forward="false" selection-start-line="122" selection-start-column="42" selection-end-line="122" selection-end-column="51" />
-          <folding>
-            <marker date="1496996740134" expanded="true" signature="4031:4221" ph="insert into music_info" />
-          </folding>
+        <state relative-caret-position="432">
+          <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2060,53 +2561,199 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9792">
-          <caret line="272" column="53" lean-forward="false" selection-start-line="272" selection-start-column="53" selection-end-line="272" selection-end-column="53" />
+        <state relative-caret-position="176">
+          <caret line="418" column="42" lean-forward="false" selection-start-line="418" selection-start-column="42" selection-end-line="418" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/EditMusic.java">
+    <entry file="jar://E:/struts-2.5.10.1-min-lib/lib/struts2-core-2.5.10.1.jar!/struts-default.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5400">
-          <caret line="204" column="26" lean-forward="false" selection-start-line="204" selection-start-column="26" selection-end-line="204" selection-end-column="26" />
-          <folding>
-            <marker date="1498009744726" expanded="true" signature="4222:4262" ph="DELETE FROM " />
-            <marker date="1498009744726" expanded="true" signature="4307:4508" ph="INSERT INTO music_info... " />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="206" column="102" lean-forward="false" selection-start-line="206" selection-start-column="81" selection-end-line="206" selection-end-column="102" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/EditAvatar.java">
+    <entry file="jar://E:/struts-2.5.10.1-min-lib/lib/struts2-json-plugin-2.5.10.1.jar!/struts-plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="41" column="38" lean-forward="false" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding>
-            <marker date="1497884555574" expanded="true" signature="884:952" ph="UPDATE user_... " />
-          </folding>
+        <state relative-caret-position="396">
+          <caret line="11" column="56" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/GetMyinfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="28" />
+        <state relative-caret-position="1800">
+          <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
           <folding>
             <marker date="1497408110867" expanded="true" signature="1114:1213" ph="SELECT user_... user_info" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://E:/apache-tomcat-8.5.5/lib/servlet-api.jar!/javax/servlet/http/HttpSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/Logout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="35" column="46" lean-forward="false" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/GetCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+        <state relative-caret-position="847">
+          <caret line="141" column="44" lean-forward="false" selection-start-line="141" selection-start-column="44" selection-end-line="141" selection-end-column="44" />
           <folding>
             <marker date="1498187772511" expanded="true" signature="1123:1204" ph="select user_... user_info" />
             <marker date="1498187772511" expanded="true" signature="1838:1914" ph="select email... email_code" />
             <marker date="1498187772511" expanded="true" signature="2043:2107" ph="update email... " />
             <marker date="1498187772511" expanded="true" signature="2235:2304" ph="INSERT INTO email_code" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/enchantAdmin/page/user_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/GetFeedBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="61" column="143" lean-forward="false" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="143" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/EditMusic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3492">
+          <caret line="152" column="229" lean-forward="false" selection-start-line="152" selection-start-column="28" selection-end-line="152" selection-end-column="229" />
+          <folding>
+            <marker date="1498463383376" expanded="true" signature="4249:4289" ph="DELETE FROM " />
+            <marker date="1498463383376" expanded="true" signature="4334:4535" ph="INSERT INTO music_info... " />
+            <marker date="1498463383376" expanded="true" signature="4987:5035" ph="SELECT music... musci" />
+            <marker date="1498463383376" expanded="true" signature="4987:5058" ph="SELECT music... musci_info" />
+            <marker date="1498463383376" expanded="true" signature="4987:5070" ph="SELECT music... musci_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/GetLatestMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="42" column="75" lean-forward="false" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="75" />
+          <folding>
+            <marker date="1496893165797" expanded="true" signature="979:1370" ph="SELECT msui,... messages" />
+            <marker date="1496893165797" expanded="true" signature="1085:1271" ph="SELECT send_... messages" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/GetMusicComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="34" column="224" lean-forward="false" selection-start-line="34" selection-start-column="131" selection-end-line="34" selection-end-column="224" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/GetUserList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="77" column="142" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="142" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/ReleaseNotice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <marker date="1499192164247" expanded="true" signature="1400:1504" ph="insert into messages... " />
+            <marker date="1499192164247" expanded="true" signature="2150:2240" ph="select id fr... messages" />
+            <marker date="1499192164247" expanded="true" signature="2387:2416" ph="select user_... user_info" />
+            <marker date="1499192164247" expanded="true" signature="2610:2717" ph="INSERT INTO unreadboardcastmessages... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/SendMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="69" column="27" lean-forward="false" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+          <folding>
+            <marker date="1499238467632" expanded="true" signature="1766:1939" ph="INSERT INTO messages... " />
+            <marker date="1499238467632" expanded="true" signature="2018:2197" ph="INSERT INTO unreadmessages... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/enchant/WEB-INF/classes/actions/GetMessages.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/GetMessages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="61" column="51" lean-forward="false" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="51" />
+          <folding>
+            <marker date="1499239567883" expanded="true" signature="1346:1411" ph="SELECT title... unreadmessages" />
+            <marker date="1499239567883" expanded="true" signature="1346:1425" ph="SELECT messa... unreadmessages" />
+            <marker date="1499239567883" expanded="true" signature="1346:1451" ph="SELECT messa... unreadboardcastmessages" />
+            <marker date="1499239567883" expanded="true" signature="1687:1745" ph="SELECT title... messages" />
+            <marker date="1499239567883" expanded="true" signature="1969:2026" ph="SELECT title... messages" />
+            <marker date="1499239567883" expanded="true" signature="1969:2027" ph="SELECT title... messages" />
+            <marker date="1499239567883" expanded="true" signature="2170:2272" ph="SELECT title... unreadmessages" />
+            <marker date="1499239567883" expanded="true" signature="2170:2290" ph="SELECT title... unreadmessages" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/MyJSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="802">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/jre/lib/ext/jedis-2.9.0.jar!/redis/clients/jedis/JedisCommands.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="133" column="18" lean-forward="true" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/MusicFavourite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="77" column="31" lean-forward="false" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

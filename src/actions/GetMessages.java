@@ -44,14 +44,31 @@ public class GetMessages extends ActionSupport {
         messages=new ArrayList<message>();
         ServletContext sctx = ServletActionContext.getServletContext();
         Connection con = (Connection) sctx.getAttribute("DBCon");
-        ResultSet rs;
+        String querySQL;
 
-        String querySQL="SELECT title,content,create_time FROM unreadmessages WHERE send_user_id="+send_user_id+" AND to_user_id="+to_user_id+"";
+        ResultSet rs,rs1;
+        int message_id=0;
 
-        rs=con.createStatement().executeQuery(querySQL);
+        if(send_user_id == 1){
+            querySQL="SELECT message_id FROM unreadboardcastmessages WHERE  to_user_id="+to_user_id+"  ORDER BY message_id DESC ";
+            System.out.println(querySQL);
+            rs1=con.createStatement().executeQuery(querySQL);
+            while(rs1.next()){
+                message_id=rs1.getInt(1);
+                rs=con.createStatement().executeQuery("SELECT title,content,create_time FROM messages WHERE id = "+message_id+" ");
+                messages.add(new message(rs.getString(1),rs.getString(2),rs.getString(3)));
+            }
+            //System.out.println(message_id);
+           // rs=con.createStatement().executeQuery("SELECT title,content,create_time FROM messages WHERE id = "+message_id+" ");
+            //messages.add(new message(rs.getString(1),rs.getString(2),rs.getString(3)));
+        }
+            querySQL = "SELECT title,content,create_time FROM messages WHERE send_user_id=" + send_user_id + " AND to_user_id=" + to_user_id + "";
+            System.out.println(querySQL);
+            rs = con.createStatement().executeQuery(querySQL);
 
         while (rs.next()){
             messages.add(new message(rs.getString(1),rs.getString(2),rs.getString(3)));
+            System.out.println(rs.getString(1));
         }
 
         //con.createStatement().executeUpdate("DELETE FROM unreadmessages WHERE send_user_id="+send_user_id+" AND  to_user_id="+to_user_id+"");

@@ -59,7 +59,8 @@ public class GetFeedBack extends ActionSupport {
         Connection con = (Connection) sctx.getAttribute("DBCon");
         ResultSet rs;
 
-        String querySQL= "select send_user_id,title,content,create_time from messages where message_type="+1+" limit "+limit+" offset "+offset+" ";
+        String querySQL= "select send_user_id,title,content,create_time from messages where message_type= 1  limit "+limit+" offset "+offset+" ";
+        System.out.println(querySQL);
         rs=con.createStatement().executeQuery(querySQL);
         while (rs.next()){
             FeedBack fbItem=new FeedBack(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4));

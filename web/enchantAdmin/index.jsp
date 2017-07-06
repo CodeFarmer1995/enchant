@@ -26,13 +26,16 @@
   <%
 
       Cookie cookies[]=cookies = request.getCookies();
-      for (int i=0;i<cookies.length;i++){
+      if(cookies != null)
+          for (int i=0;i<cookies.length;i++){
           if(cookies[i].getName().equals("name")){
               name=cookies[i].getValue();
           }
       }
-      if(name == null){
-          response.sendRedirect("login.html");
+      if(session.getAttribute("admin") == null || !session.getAttribute("admin").equals("yes")){
+          System.out.println(session.getId());
+          System.out.println(session.getAttribute("admin"));
+              response.sendRedirect("login.html");
       }
   %>
 

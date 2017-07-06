@@ -15,7 +15,7 @@ public class SearchMusic extends ActionSupport {
     private int ps;
     private int pn;
     private int count;
-    ArrayList<MusicItem> musicList;
+    ArrayList<MusicItem> music;
 
     public int getCount() {
         return count;
@@ -25,12 +25,12 @@ public class SearchMusic extends ActionSupport {
         this.count = count;
     }
 
-    public ArrayList<MusicItem> getMusicList() {
-        return musicList;
+    public ArrayList<MusicItem> getMusic() {
+        return music;
     }
 
-    public void setMusicList(ArrayList<MusicItem> musicList) {
-        this.musicList = musicList;
+    public void setMusic(ArrayList<MusicItem> music) {
+        this.music = music;
     }
 
     public int getPs() {
@@ -69,13 +69,15 @@ public class SearchMusic extends ActionSupport {
     public String execute() throws Exception {
         int limit = ps;
         int offset = (pn - 1) * ps;
-        musicList=new ArrayList<MusicItem>();
+        music=new ArrayList<MusicItem>();
 
         String querySQL="";
         if(artist_name==null || artist_name.equals(""))
-             querySQL = "SELECT music_id,music_name,artist_name,music_file FROM music_info WHERE   music_name LIKE '"+music_name+"' limit "+limit+" offset "+offset+" ";
+            querySQL = "SELECT music_id,music_name,artist_name,music_file FROM music_info WHERE   music_name LIKE '"+music_name+"' limit "+limit+" offset "+offset+" ";
+
         if(music_name==null || music_name.equals(""))
              querySQL = "SELECT music_id,music_name,artist_name,music_file FROM music_info WHERE  artist_name like '"+artist_name+"' limit "+limit+" offset "+offset+" ";
+
 
         ServletContext sctx = ServletActionContext.getServletContext();
         Connection con = (Connection) sctx.getAttribute("DBCon");
@@ -84,8 +86,8 @@ public class SearchMusic extends ActionSupport {
         System.out.println(querySQL);
        rs=con.createStatement().executeQuery(querySQL);
        while (rs.next()){
-           MusicItem music=new MusicItem(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4));
-           musicList.add(music);
+           MusicItem musicItem=new MusicItem(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4));
+           music.add(musicItem);
        }
 
         //String querySQL="";
